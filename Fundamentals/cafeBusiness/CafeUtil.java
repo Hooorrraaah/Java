@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CafeUtil{
     public Integer getStreakGoal(){
         int sum = 0;
@@ -6,18 +8,22 @@ public class CafeUtil{
         }
         return sum;
     }
-    public double getOrderTotal(double[] total){
+    public double getOrderTotal(double[] lineItems){
         double sum = 0;
         
-        for(double price: total){
+        for(double price: lineItems){
             sum+=price;
         }
         return sum;
     }
-    // public String displayMenu() {
-    //     for (String item: menu) {
-    //         System.out.println(item);
-    //     }
-    // }
-
+    public void displayMenu(String[] menu) {
+        for (String item: menu) {
+            System.out.println(item);
+        }
+    }
+    public ArrayList<String> addCustomer(ArrayList<String> customers) {
+        System.out.println("Please enter your name:");
+        String userName = System.console().readLine();
+        return
+    }
 }

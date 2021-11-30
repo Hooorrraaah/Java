@@ -7,6 +7,7 @@ public class TestCafe {
         /* ============ App Test Cases ============= */
 
         CafeUtil appTest = new CafeUtil();
+
         System.out.println("\n----- Streak Goal Test -----");
         System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal());
     
@@ -16,22 +17,22 @@ public class TestCafe {
         
         System.out.println("----- Display Menu Test-----");
         
-        // List<String> loadMenu = Arrays.asList(
-        //     "drip coffee",
-        //     "cappucino",
-        //     "latte",
-        //     "mocha"
-        // );
-        // ArrayList<String> menu = new ArrayList<String>();
-        // menu.addAll(loadMenu);
-        // appTest.displayMenu(menu);
+        String[] menu = {
+            "drip coffee",
+            "cappucino",
+            "latte",
+            "mocha"
+        };
+
+        appTest.displayMenu(menu);
     
-        // System.out.println("\n----- Add Customer Test-----");
-        // ArrayList<String> customers = new ArrayList<String>();
-        // // --- Test 4 times ---
-        // for (int i = 0; i < 4; i++) {
-        //     appTest.addCustomer(customers);
-        //     System.out.println("\n");
-        // }
+        System.out.println("\n----- Add Customer Test-----");
+
+        ArrayList<String> customers = new ArrayList<String>();
+        for (int i = 0; i < 4; i++) {
+            appTest.addCustomer(customers);
+            System.out.println("\n");
+            }
+
     }
 }
