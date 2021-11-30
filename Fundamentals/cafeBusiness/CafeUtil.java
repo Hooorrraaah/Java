@@ -6,11 +6,18 @@ public class CafeUtil{
         }
         return sum;
     }
-//     public Integer getOrderTotal(){
-//         for(int i=[0];i<5;i++)
-
-//         return 
-//     }
-
+    public double getOrderTotal(double[] total){
+        double sum = 0;
+        
+        for(double price: total){
+            sum+=price;
+        }
+        return sum;
+    }
+    // public String displayMenu() {
+    //     for (String item: menu) {
+    //         System.out.println(item);
+    //     }
+    // }
 
 }

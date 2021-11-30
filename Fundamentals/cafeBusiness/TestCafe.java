@@ -14,14 +14,14 @@ public class TestCafe {
         double[] lineItems = {3.5, 1.5, 4.0, 4.5};
         System.out.printf("Order total: %s \n\n",appTest.getOrderTotal(lineItems));
         
-        // System.out.println("----- Display Menu Test-----");
+        System.out.println("----- Display Menu Test-----");
         
-        List<String> loadMenu = Arrays.asList(
-            "drip coffee",
-            "cappucino",
-            "latte",
-            "mocha"
-        );
+        // List<String> loadMenu = Arrays.asList(
+        //     "drip coffee",
+        //     "cappucino",
+        //     "latte",
+        //     "mocha"
+        // );
         // ArrayList<String> menu = new ArrayList<String>();
         // menu.addAll(loadMenu);
         // appTest.displayMenu(menu);
