@@ -5,11 +5,17 @@ public class BankTest {
         BankAccount bankAccount3 = new BankAccount(100, 200);
         System.out.println(BankAccount.bankCount() + " accounts have been opened.");
 
-        System.out.println(bankAccount1.getSavingBalance());
-        System.out.println(bankAccount1.getCheckingBalance());
-        System.out.println(bankAccount2.getSavingBalance());
-        System.out.println(bankAccount2.getCheckingBalance());
-        System.out.println(bankAccount3.getSavingBalance());
-        System.out.println(bankAccount3.getCheckingBalance());
+        System.out.println("Saving's Account: $" + bankAccount1.getSavingBalance()+ " Checking Account: $" + bankAccount1.getCheckingBalance());
+        System.out.println("Saving's Account: $" + bankAccount2.getSavingBalance()+ " Checking Account: $" + bankAccount2.getCheckingBalance());
+        System.out.println("Saving's Account: $" + bankAccount3.getSavingBalance()+ " Checking Account: $" + bankAccount3.getCheckingBalance());
+
+        bankAccount1.depositSaving(50);
+        bankAccount1.withdrawSaving(50);
+        bankAccount1.withdrawSaving(500);
+        bankAccount1.withdrawChecking(50);
+        bankAccount1.withdrawChecking(500);
+        System.out.println("Saving's Account: $" + bankAccount1.getSavingBalance()+ " Checking Account: $" + bankAccount1.getCheckingBalance());
+
+
     }
 }

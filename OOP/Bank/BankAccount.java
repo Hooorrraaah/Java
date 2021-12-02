@@ -15,6 +15,33 @@ public class BankAccount {
         return numberOfAccounts;
     }
 
+    public void depositSaving(int amount) {
+        System.out.println("You deposited $" + amount + " into your savings account");
+        this.savingBalance += amount;
+    }
+
+    public void depositChecking(int amount) {
+        System.out.println("You deposited $" + amount + " into your checking account");
+        this.checkingBalance += amount;
+    }
+    public void withdrawSaving(int amount) {
+        if (savingBalance < amount){
+            System.out.println("You attempted to withdraw $" + amount + " from your savings account. Insufficient Funds. Unable to complete Transaction");
+        }else{
+            System.out.println("You withdrew $" + amount + " from your savings account");
+            this.savingBalance -= amount;
+        }
+    }
+
+    public void withdrawChecking(int amount) {
+        if (savingBalance < amount){
+            System.out.println("You attempted to withdraw $" + amount + " from your checking account. Insufficient Funds. Unable to complete Transaction");
+        }else{
+            System.out.println("You withdrew $" + amount + " from your checking account");
+            this.checkingBalance -= amount;
+        }
+    }
+
     public double getSavingBalance() {
         return savingBalance;
     }
